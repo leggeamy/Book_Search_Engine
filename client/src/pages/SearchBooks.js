@@ -33,7 +33,7 @@ const SearchBooks = () => {
     }
 
     try {
-      const response = await fetch(`https://www.googleapis/com/books/v1/volumes?q=${searchInput}`);
+      const response = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${searchInput}`);
 
       if (!response.ok) {
         throw new error('something went wrong!');
